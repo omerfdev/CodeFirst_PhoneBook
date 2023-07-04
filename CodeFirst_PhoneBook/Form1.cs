@@ -206,7 +206,7 @@ namespace CodeFirst_PhoneBook
             selectedContact = lsvContactList.SelectedItems[0].Tag as Contact;
             db.Contacts.Remove(selectedContact);
             db.SaveChanges();
-            MessageBox.Show("Kayýt silindi");
+            MessageBox.Show("Kayıt silindi");
             ListFill(db.Contacts.ToList());
         }
 
